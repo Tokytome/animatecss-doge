@@ -1,0 +1,50 @@
+// Animation //
+@keyframes intro {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100vh, 0);
+  }
+}
+
+@keyframes introText {
+  from {
+    opacity: 0;
+  }
+}
+
+
+// Main //
+body {
+  background-color: beige;
+  background-image: url(../img/doge.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.text {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-name: introText;
+  animation-timing-function: ease-out;
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 8em;
+  left: 1.5em;
+  position: fixed;
+  top: 1em;
+}
+
+.cool {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-name: intro;
+  animation-timing-function: ease-out;
+  height: 5.5em;
+  margin-left: 40em;
+  margin-top: 19.5em;
+  transform: rotate(10deg);
+}
